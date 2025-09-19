@@ -1028,7 +1028,7 @@ div#navi ul li ul li a:hover {
     background: url(../img/info_bg.png);
 }
 .infotxt {
-    background: #EDF1F9;
+    background: #ebcdcd;
     padding: 1% 2%;
     border-radius: 5px;
     max-width: 970px;
@@ -1037,7 +1037,7 @@ div#navi ul li ul li a:hover {
 .infotxt span {
     display: block;
     font-weight: bold;
-    color:#0A3DA6;
+    color:#870000;
 }
 /******/
 
@@ -1075,7 +1075,7 @@ div#navi ul li ul li a:hover {
 .seido{
     padding: 80px 0;
     text-align: center;
-    background: #EDF1FA;
+    background: #ebcdcd;
 }
 .seido p{
     font-size: 18px;
