@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*全体*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+body {
+    font-family: Lato, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+/*サイトカラー（背景色）*/
+
+.base-color-bg {
+    background-color: #0a3da6;
+    color: #fff;
+}
+
+.base-sb-color-bg {
+    background-color: #dae3ff;
+    color: #333;
+}
+
+
+/*サイトカラー（文字色）*/
+
+.base-color {
+    color: #0a3da6;
+}
+
+.base-sb-color {
+    color: #dae3ff;
+}
+/*代表者の名前*/
+.president-name {
+  font-size: 18px;
+  text-align: right;
+}
+/*コピーライト*/
+
+.copy {
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #001E76;
+    color: #fff;
+}
+/*会社概要のdl*/
+.dl-company-info>dd {
+  margin-bottom: 15px;
+}
+
+/*パンくずリスト*/
+
+.breadcrumb {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 0px;
+}
+
+.breadcrumb>li+li:before {
+    content: ">";
+}
+
+
+/*ページ大見出し*/
+
+.headline-lg {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+}
+
+
+/*中見出し*/
+
+.headline-md {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 15px;
+    margin-bottom: 30px;
+}
+
+
+
+/*コンテナー*/
+
+.container-wrap {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.container-bg {
+    background-color: #f9f9f9;
+}
+
+/*お問い合わせ*/
+.contact_box {
+	height: 600px;
+	margin-bottom: 30px;
+}
+
+/*施工実績*/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #f9f9f9;
+}
+.name-box {
+	font-weight: bold;
+	height: 40px;
+}
+
+/*フッターのリンク*/
+.footer a {
+	color: #fff;
+}
+.footer a:hover {
+	color: #F0AD4E;
+}
+
+/*汎用文字サイズ*/
+.size16 {
+	font-size: 16px;
+}
+
+/*汎用マージン・パディング*/
+
+.m15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.m30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.p15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.p30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+
+/*ボタン*/
+
+.btn {
+    border-radius: 17px;
+}
+
+.btn>i {
+    padding: 0 0 0 5px;
+}
+
+
+/*サイトヘッダー*/
+
+.site-header {
+    margin-bottom: 1.2em;
+}
+
+.site-header h1 {
+    font-size: 10px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.tel-box {
+    text-align: right;
+}
+
+.tel-box>span {
+    font-size: 2.0em;
+}
+
+.tel-box i {
+    font-size: 1.1em;
+    margin-right: 0.3em;
+}
+
+
+/*グローバルナビ*/
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-nav>li {
+    font-size: 1.1em;
+}
+
+.navbar-nav i {
+    font-size: 1.1em;
+    margin-right: 0.4em;
+    color: #19378C;
+}
+
+
+/*トップへ戻る*/
+
+.to-top {
+    padding: 15px
+}
+
+
+/*PCサイズ用*/
+
+@media (min-width: 992px) {
+    /*全体*/
+    .border-left {
+        border-left: 1px solid #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    /*グローバルナビ*/
+    .navbar-default {
+        background-color: rgba(255, 255, 255, 0.0);
+        border: none;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav>li {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav>li:first-child {
+        border-left: none;
+    }
+    .nav-5>li {
+        width: 20%;
+    }
+    .nav-6>li {
+        width: 16.66666667%;
+    }
+    .nav-7>li {
+        width: 14.28571428571429%;
+    }
+    .nav-8>li {
+        width: 12.5%;
+    }
+}
+/*トップページ*/
+.jfsinfo img{
+    max-width: 100%;
+}
+/*jfsお知らせページ*/
+.jfs img{
+    max-width:600px; 
+}
