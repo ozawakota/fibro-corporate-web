@@ -829,8 +829,8 @@ p.htel {
 }
 
 .txtbox {
-    background: #eaf4fa;
-    border: 1px solid #c9dbe6;
+    background: #ebcdcd;
+    border: 1px solid #ebcdcd;
     padding: 25px;
 }
 
@@ -839,7 +839,7 @@ p.htel {
 }
 
 .txtbox dt {
-    border-bottom: 3px solid #2D54A3;
+    border-bottom: 3px solid #BE7A7A;
     font-weight: bold;
     font-size: 20px;
 }
@@ -1166,8 +1166,8 @@ div#navi ul li ul li a:hover {
 }
 
 .txtbox {
-    background: #eaf4fa;
-    border: 1px solid #c9dbe6;
+    background: #ebcdcd;
+    border: 1px solid #ebcdcd;
     padding: 25px;
 }
 
