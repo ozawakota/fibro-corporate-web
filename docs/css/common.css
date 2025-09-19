@@ -1093,7 +1093,7 @@ div#navi ul li ul li a:hover {
 }
 
 .base-color-bg {
-    background-color: #0a3da6;
+    background-color: #be0000;
 }
 
 .bnr8-box {
@@ -1109,12 +1109,13 @@ div#navi ul li ul li a:hover {
 }
 
 .bg_h2 {
-    background: url(../img/h2.jpg) no-repeat 0% 100%;
-    color: #2c54a3;
+    /* background: url(../img/h2.jpg) no-repeat 0% 100%; */
+    color: #be0000;
     font-size: 30px;
     margin: 30px 0px;
     padding: 15px 0px;
     font-weight: normal;
+    border-bottom: 6px solid #be7a7a;
 }
 
 .red {
@@ -1155,7 +1156,7 @@ div#navi ul li ul li a:hover {
 }
 
 .link_pages .active {
-    background-color: #0A3DA6;
+    background-color: #be0000;
     color: #fff;
 }
 
