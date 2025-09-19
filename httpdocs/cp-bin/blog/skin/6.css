@@ -1,0 +1,258 @@
+html {
+	scrollbar-track-color: #ffc;
+	scrollbar-face-color: #ffc;
+	scrollbar-shadow-color: #999;
+	scrollbar-darkshadow-color: #ffc;
+	scrollbar-highlight-color: #999;
+	scrollbar-3dlight-color: #ffc;
+	scrollbar-arrow-color: #999;
+}
+
+body {
+	margin: 0;
+	background-image: url('images/e2_bg.gif');
+	background-color: #ffc;
+	color: #999;
+	font-family: Arial, Helvetica, "ＭＳ Ｐゴシック", Osaka;
+}
+
+/* Link Color
+--------------------------*/
+a:link { color: #999; text-decoration: none; }
+a:visited { color: #999; text-decoration: none; }
+a:hover { color: #f93; text-decoration: none; }
+a:active { color: #f93; text-decoration: none; }
+
+#copyright {
+	padding-top: 1em;
+	text-align: center;
+	font-size:x-small;
+}
+
+
+/* --------------------------------------- レイアウト */
+#contentBody {
+	width: 678px;
+	margin: 0 auto;
+	background-image: url('images/e2_side2.gif');
+}
+
+#layoutHead {
+	width: 678px;
+	height: 18px;
+	background-image: url('images/e2_border.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#layoutBody {
+	width: 678px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#layoutShop {
+	width: 472px;
+	padding: 7px 5px 7px;
+	background-color: #fff;
+}
+
+#layoutShop img {
+	border: 0;
+	display: block;
+	padding-bottom: 35px;
+}
+
+#layoutMain {
+	width: 350px;
+	background-color: #fff;
+	padding-top: 20px;
+	background-image: url('images/e2_border2.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#layoutSide {
+	width: 164px;
+	font-size: small;
+	line-height: 1.3em;
+}
+
+#layoutFoot {
+	clear: both;
+	width: 678px;
+	margin: 0 auto;
+	padding-top: 18px;
+	background-color: #fff;
+	background-image: url('images/e2_border.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/* --------------------------------------- エントリー */
+.entryBody {
+	clear: left;
+	width: 350px;
+	padding-bottom: 10px;
+	background-image: url('images/e2_border2.gif');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.entryTitle {
+	padding-bottom: 1em;
+	font-size: medium;
+	color: #999;
+}
+
+.entryDate {
+	float: left;
+	padding-right: 25px;
+	font-family: Arial, Helvetica;
+	font-size: x-small;
+}
+
+.entryContents {
+	padding: 8px 20px;
+	font-size:small;
+	line-height: 1.3em;
+}
+
+.entryContents img {
+	display: block;
+	padding-bottom: 1em;
+	border: 0;
+}
+
+.entryState {
+	font-size: x-small;
+}
+
+.states {
+	padding-top: 2em;
+}
+
+.pageup {
+	padding-left: 10px;
+}
+
+.pageup img {
+	padding: 0 !important;
+	border: 0;
+}
+
+
+/* --------------------------------------- コメント */
+.comments {
+	clear: both;
+	margin-top: 1em;
+	padding-bottom: 2em;
+	border-top: 1px #999 dashed;
+}
+
+
+/* --------------------------------------- サイドバー */
+/* Calendar
+--------------------------*/
+#calendarBox {
+	width: 472px;
+}
+
+#calendarBox form {
+	display: none;
+}
+
+#dispCalendar {
+	width: 472px;
+}
+
+.calendar {
+	width: 472px;
+	table-layout: fixed;
+	font-size: 10px;
+	font-family: Arial, Helvetica;
+	color:#fc9;
+}
+
+.calendar td {
+}
+
+.cell_sunday {
+}
+
+.cell_today {
+	border-bottom: 1px #fc9 solid !important;
+	font-weight: bold !important;
+}
+
+.calendar a:link { color: #f93; }
+.calendar a:visited { color: #f93; }
+.calendar a:hover { color: #f93; font-weight: bold; }
+
+.calendarNavi { font-size: 10px; color:#fc9; }
+.calendarNavi a:link { color: #fc9; }
+.calendarNavi a:visited { color: #fc9; }
+.calendarNavi a:hover { color: #f93; }
+
+.calendarNavi img { border: 0; }
+
+
+/* New Entries
+--------------------------*/
+#newentriesBox {
+	width: 144px;
+	padding: 33px 10px 10px;
+	background-image: url('images/e2_newentries.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.icoList {
+	padding: 0 0 5px 10px;
+	background-image: url('images/e2_ico.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	line-height: 1em;
+}
+
+
+/* Categories
+--------------------------*/
+#categoriesBox {
+	width: 144px;
+	padding: 33px 10px 10px;
+	background-image: url('images/e2_categories.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+
+/* Recent Comments
+--------------------------*/
+#RCommentsBox {
+	width: 144px;
+	padding: 33px 10px 10px;
+	background-image: url('images/e2_comments.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/* Profile
+--------------------------*/
+#profileBox {
+	width: 144px;
+	padding: 33px 10px 10px;
+	background-image: url('images/e2_profile.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/* Links
+--------------------------*/
+#linksBox {
+	width: 144px;
+	padding: 33px 10px 10px;
+	background-image: url('images/e2_link.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}

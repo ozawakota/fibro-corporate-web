@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}">
+<title>{SITETITLE}</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{HOMELINK}?mode=rss">
+<link rel="stylesheet" href="{CSSNAME}" type="text/css">
+<SCRIPT language="JavaScript">
+<!--
+function time() {
+var now = new Date()
+yea = now.getYear()
+if(yea <= 2000){yea=yea+1900}
+mon = now.getMonth()+1
+if (mon<10) {mon="0"+mon}
+day = now.getDate()
+if (day<10) {day="0"+day}
+hou = now.getHours()
+if (hou<10) {hou="0"+hou}
+min = now.getMinutes()
+if (min<10) {min="0"+min}
+sec = now.getSeconds()
+if (sec<10) {sec="0"+sec}
+document.form_clock.clock.value= yea +"."+ mon +"."+ day +"/"+ hou +":"+ min +":"+ sec
+setTimeout('time()',1000)
+}
+//-->
+</SCRIPT>
+</head>
+
+<body onload="time()">
+<a name="pagetop"></a>
+<div id="contentBody">
+
+	<!-- ［ブログタイトル］ -->
+	<div id="layoutHead">
+		<h1 id="blogTitleText"><a href={HOMELINK}>{SITENAME}</a></h1>
+	</div>
+	<div class="bgborder">&nbsp;</div>
+	<div id="blogDescription">{SITEDESC}</div>
+	<!-- ［/ブログタイトル］ -->
+
+	<!-- Layout Table -->
+	<table border="0" cellpadding="0" cellspacing="0" id="layoutBody">
+	<tr valign="top">
+	<td id="layoutSide">
+	<!-- ［カラム左］ -->
+		<!-- Calendar -->
+		<div id="calendarBox">
+			<form name="form_clock"><input type="text" size="30" name="clock" class="clock"></form>
+			<div id="dispCalendar">
+				<table border="0" align="center" class="calendarNavi">
+				<tr>
+				<td>{CDCTRLBACK}<img src="./skin/images/b2_back.gif">{/CDCTRLBACK}</td>
+				<td>{CDYM}M.Y{/CDYM}</td>
+				<td>{CDCTRLNEXT}<img src="./skin/images/b2_next.gif">{/CDCTRLNEXT}</td>
+				</tr>
+				</table>
+				<table border="0" class="calendar">
+				<tr align="center">
+				<td class="cell_sunday">S</td>
+				<td>M</td>
+				<td>T</td>
+				<td>W</td>
+				<td>T</td>
+				<td>F</td>
+				<td>S</td>
+				</tr>
+				</table>
+				{CALENDARBOX}
+			</div>
+		</div>
+		<!-- /Calendar -->
+		
+		<!-- Categories -->
+		<div id="categoriesBox">
+		{CA}
+			{CALOOP}
+			<div class="list">{CALINK}{CATITLE}({CACOUNT}){/CALINK}</div>
+			{/CALOOP}
+		{/CA}
+		</div>
+		<!-- /Categories -->
+		
+		<!-- Profile -->
+		<div id="profileBox">
+		{PR}
+			{PRLINK}{PRNAME}{/PRLINK}
+		{/PR}
+		</div>
+		<!-- /Profile -->
+		
+		<!-- Links -->
+		<div id="linksBox">
+		{LI}
+			{LILOOP1}
+			<div class="list">{LICATEGORY}<br>{LILOOP2}{LINAME}<br>{/LILOOP2}</div>
+			{/LILOOP1}
+		{/LI}
+		</div>
+		<!-- /Links -->
+	</td>
+	<td id="layoutMain">
+	<!-- ［カラム中］ -->
+		<!-- ［プロフィール表示］ -->
+		{PROFILES}
+		<table border="0" cellspacing="0" cellpadding="0" class="commentBody">
+		<tr>
+		<td class="commentTitle">プロフィール</td>
+		</tr>
+		<tr>
+		<td class="commentContents">
+			{PROFILENAME}
+			<br>
+			{PROFILEMES}
+		</td>
+		</tr>
+		</table>
+		{/PROFILES}
+		<!-- ［/プロフィール表示］ -->
+
+		<!-- ［エントリー］ -->
+		{LOGLOOP}
+		<div class="entryBody">
+			<div class="entryTitle">{LOGTITLE}</div>
+			<div class="entryDate">{LOGYMD}d/M.Y [D] G:i{/LOGYMD}</div>
+			<div class="entryContents">{LOGBODY}
+				<br>
+				{MOREMARK}more..{/MOREMARK}
+				{LOGMORE}
+				<div class="entryState">{LOGCATEGORY} : {LOGCOMMENT} : {LOGTRACKBACK}</div>
+			</div>
+		</div>
+		<div class="pageup"><a href="#pagetop"><img src="./skin/images/b2_pageup.gif"></a></div>
+		{/LOGLOOP}
+		<!-- ［/エントリー］ -->
+		
+		<!-- ［コメント］ -->
+		{COMMENT}<a name="comments"></a>
+		<div class="commentBody">
+			<div class="commentTitle">コメント</div>
+			<div class="commentContents">
+			{COMMENTLOOP}
+				<div class="comments">
+					{COMMENTBODY}
+					<div class="commentState">{COMMENTEMAIL}{COMMENTUSER}{/COMMENTEMAIL} : {COMMENTURL}URL{/COMMENTURL} : : {COMMENTYMD}d/M.Y [D] G:i{/COMMENTYMD} : {COMMENTID}</div>
+				</div>
+			{/COMMENTLOOP}
+			</div>
+			<div class="commentContents">コメントする</div>
+			<div class="commentContents">
+				<form action="index.php?mode=comment" method=post>
+				<input type=hidden value={CEID} name=c_eid> <label for=c_name>name:</label><br>
+				<input id=c_name tabindex=1 name=c_name value={CNAME}><br>
+				<label for=c_email>email:</label><br>
+				<input id=c_email tabindex=2 name=c_email value={CEMAIL}><br>
+				<label for=c_url>URL:</label><br>
+				<input id=c_url tabindex=3 name=c_url value={CURL}><br>
+				<label for=c_mes>comments:</label><br>
+				<textarea id=c_mes style="WIDTH: 300px" tabindex=4 name=c_mes rows=10 cols=40></textarea><br>
+				<br>
+				<input type=submit value=コメント送信> <input id=set_cookie type=checkbox value=on name=set_cookie> <label for=set_cookie>Cookieに登録</label>
+				</form>
+			</div>
+		</div>
+		<div class="pageup"><a href="#pagetop"><img src="./skin/images/b2_pageup.gif"></a></div>
+		{/COMMENT}
+		<!-- ［/コメント］ -->
+		
+		<!-- ［トラックバック］ -->
+		{TRACKBACK}<a name="trackback"></a>
+		<div class="trackbackBody">
+			<div class="trackbackTitle">この記事のトラックバックURL</div>
+			<div class="trackbackContents">{TRACKBACKURL}</div>
+		</div>
+		<div class="pageup"><a href="#pagetop"><img src="./skin/images/b2_pageup.gif"></a></div>
+		
+		<div class="trackbackBody">
+			<div class="trackbackTitle">トラックバック</div>
+			<div class="trackbackContents">
+				{TRACKBACKLOOP}
+				<div class="trackbacks">{TRACKBACKBODY}</div>
+				<div class="trackbackState">{TRACKBACKUSER} : {TRACKBACKYMD}d/M.Y [D] G:i{/TRACKBACKYMD}</div>
+				{/TRACKBACKLOOP}
+			</div>
+		</div>
+		<div class="pageup"><a href="#pagetop"><img src="./skin/images/b2_pageup.gif"></a></div>
+		{/TRACKBACK}
+		<!-- ［/トラックバック］ -->
+	</td>
+	<td id="layoutSide">
+	<!-- ［カラム右］ -->
+		<!-- New Enteries -->
+		<div id="newentriesBox">
+		{NE}
+			{NELOOP}
+			<div class="list">{NELINK}{NETITLE}･･･{NEYMD}n/d{/NEYMD}{/NELINK}</div>
+			{/NELOOP}
+		{/NE}
+		</div>
+		<!-- /New Enteries -->
+		
+		<!-- Recent Comments -->
+		<div id="RCommentsBox">
+		{RC}
+			{RCLOOP1}
+			<div class="list">{RCTITLE}<br>{RCLOOP2}{RCLINK}{RCNAME}&gt;{RCYMD}n/d{/RCYMD}{/RCLINK}<br>{/RCLOOP2}</div>
+			{/RCLOOP1}
+		{/RC}
+		</div>
+		<!-- /Recent Comments -->
+	</td>
+	</tr>
+	</table>
+	<!-- /Layout Table -->
+
+	<!-- ［フッター］ -->
+	<div id="layoutFoot"></div>
+	<div class="bgborder"></div>
+	<div id="copyright"><a href="http://www.wadax.ne.jp/">Copyright &copy; 2005 WADAX Inc. All Rights Reserved.</a></div>
+	<!-- ［/フッター］ -->
+
+</div>
+
+<!-- 最適な表示画像サイズ -->
+<div style="width:660px; padding:10px; margin:10px auto; border:1px #ccc dashed; background-color:#fff; font-size:small;">横 300 pixel 縦 192 pixelです。（ブログの初期設定で設定してください）<br>
+横 306 pixelを超えると、表示がくずれる場合があります。</div>
+<!-- /最適な表示画像サイズ -->
+
+</body>
+</html>

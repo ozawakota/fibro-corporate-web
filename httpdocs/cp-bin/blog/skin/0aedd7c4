@@ -1,0 +1,339 @@
+html {
+	scrollbar-track-color: #d1dbd1;
+	scrollbar-face-color: #d1dbd1;
+	scrollbar-shadow-color: #999;
+	scrollbar-darkshadow-color: #d1dbd1;
+	scrollbar-highlight-color: #999;
+	scrollbar-3dlight-color: #d1dbd1;
+	scrollbar-arrow-color: #999;
+}
+
+body {
+	margin: 0;
+	background-image: url('images/b2_bg.gif');
+	background-color: #d1dbd2;
+	color: #999;
+	font-family: Arial, Helvetica, "ＭＳ Ｐゴシック", Osaka;
+}
+
+/* Link Color
+--------------------------*/
+a:link { color: #999; text-decoration: none; }
+a:visited { color: #999; text-decoration: none; }
+a:hover { color: #036; text-decoration: none; }
+a:active { color: #036; text-decoration: none; }
+
+#blogTitleText {
+	padding: 25px 35px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #036;
+}
+
+#blogTitleText a:link { color: #036; }
+#blogTitleText a:visited { color: #036; }
+#blogTitleText a:active { color: #036; }
+#blogTitleText a:hover { color: #ccc; }
+
+
+#blogDescription {
+	padding: 30px 10px;
+	font-size: medium;
+	line-height: 1.3em;
+}
+
+#copyright {
+	padding-top: 5px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size:x-small;
+}
+
+.bgborder {
+	width: 680px;
+	height: 4px;
+	background-image: url('images/b2_bandg.gif');
+	background-repeat: repeat-x;
+}
+
+
+/* --------------------------------------- レイアウト */
+#contentBody {
+	width: 680px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+#layoutHead {
+	width: 680px;
+	height: 127px;
+	background-image: url('images/b2_mainimage.jpg');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#layoutBody {
+	width: 640px;
+	margin: 0 auto;
+	background-image: url('images/b2_side2.gif');
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+#layoutMain {
+	width: 328px;
+	padding-right: 11px;
+	padding-left: 11px;
+	background-color: #fff;
+}
+
+#layoutSide {
+	width: 145px;
+	background-image: url('images/b2_side.gif');
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+#layoutFoot {
+	width: 640px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background-image: url('images/b2_foot.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #fff;
+}
+
+
+/* --------------------------------------- エントリー */
+.entryBody {
+	clear: right;
+	width: 326px;
+	border: 1px #036 solid;
+}
+
+.entryTitle {
+	padding: 5px 10px;
+	background-color: #036;
+	font-size: medium;
+	color: #ccc;
+	border-bottom: 1px #036 solid;
+}
+
+.entryDate {
+	padding: 2px 10px;
+	background-color: #696;
+	color: #fff;
+	font-family: Arial, Helvetica;
+	font-size: small;
+	text-align: right;
+	border-bottom: 1px #036 solid;
+}
+
+.entryContents {
+	padding: 10px;
+	font-size:medium;
+	line-height: 1.3em;
+}
+
+.entryContents img {
+	display: block;
+	padding-bottom: 1em;
+	border: 0;
+}
+
+.entryState {
+	padding-top: 1.5em;
+	text-align: right;
+	font-size: x-small;
+}
+
+.pageup {
+	float: right;
+	padding: 10px 0;
+}
+
+.pageup img {
+	border: 0;
+}
+
+/* --------------------------------------- コメント */
+.commentBody {
+	clear: right;
+	width: 326px;
+	border: 1px #036 solid;
+}
+
+.commentTitle {
+	padding: 5px 10px;
+	background-color: #036;
+	font-size: medium;
+	color: #ccc;
+	border-bottom: 1px #036 solid;
+}
+
+.commentContents {
+	padding: 10px;
+	font-size:medium;
+	line-height: 1.3em;
+}
+
+.commentState {
+	padding-top: 1.5em;
+	text-align: right;
+	font-size: x-small;
+}
+
+.comments {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px #999 dashed;
+}
+
+/* --------------------------------------- トラックバック */
+.trackbackBody {
+	clear: right;
+	width: 326px;
+	border: 1px #036 solid;
+}
+
+.trackbackTitle {
+	padding: 5px 10px;
+	background-color: #036;
+	font-size: medium;
+	color: #ccc;
+	border-bottom: 1px #036 solid;
+}
+
+.trackbackContents {
+	padding: 10px;
+	font-size:medium;
+	line-height: 1.3em;
+}
+
+.trackbackState {
+	padding-top: 1.5em;
+	text-align: right;
+	font-size: x-small;
+}
+
+.trackbacks {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px #999 dashed;
+}
+
+
+/* --------------------------------------- サイドバー */
+/* Calendar
+--------------------------*/
+#calendarBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_calendar.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#calendarBox form {
+	display: none;
+}
+
+#dispCalendar {
+	width: 135px;
+}
+
+.calendar {
+	width: 100%;
+	border-spacing: 2px;
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+}
+
+.calendar td {
+	width: 15px;
+	height: 12px;
+	border: 1px #999 solid;
+}
+
+.cell_sunday {
+	color: #696;
+}
+
+.cell_today {
+	border: 1px #036 solid !important;
+	font-weight: bold !important;
+}
+
+.calendar a {
+	display: block;
+	background-color: #ffc;
+}
+
+.calendarNavi {
+	font-size: 10px;
+}
+
+.calendarNavi img {
+	border: 0;
+}
+
+/* New Entries
+--------------------------*/
+#newentriesBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_newentries.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.list {
+	padding: 0 0 5px 6px;
+	background-image: url('images/b2_ico.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: medium;
+	line-height: 1em;
+}
+
+/* Categories
+--------------------------*/
+#categoriesBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_categories.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+
+/* Recent Comments
+--------------------------*/
+#RCommentsBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_comments.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/* Profile
+--------------------------*/
+#profileBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_profile.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/* Links
+--------------------------*/
+#linksBox {
+	width: 135px;	
+	padding: 25px 5px 15px;
+	background-image: url('images/b2_link.gif');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
