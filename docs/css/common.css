@@ -1337,9 +1337,9 @@ ul.news {
   }
   
   .tab_label {
-    color: #0A3DA6;
+    color: #be0000;
     font-weight: bold;
-    border: solid 2px #0A3DA6;
+    border: solid 2px #be0000;
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -1364,7 +1364,7 @@ ul.news {
   
   .tabs input:checked + .tab_label {
     color: #fff;
-    background-color: #0A3DA6;
+    background-color: #be0000;
   }
   .tabs input:checked + .tab_label::after {
     content: '';
@@ -1372,7 +1372,7 @@ ul.news {
     height: 0;
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: #0A3DA6 transparent transparent transparent;
+    border-color: #be0000 transparent transparent transparent;
     display: block;
     position: absolute;
     top: 100%;
