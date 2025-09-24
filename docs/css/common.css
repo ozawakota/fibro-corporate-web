@@ -1028,9 +1028,9 @@ div#navi ul li ul li a:hover {
     background: url(../img/info_bg.png);
 }
 .infotxt {
-    background: #ebcdcd;
+    background: #fff3f3;
     padding: 1% 2%;
-    border-radius: 5px;
+    
     max-width: 970px;
     margin: 0 auto;
 }
@@ -1085,7 +1085,7 @@ div#navi ul li ul li a:hover {
     line-height: 1.8;
 }
 .seido p span{
-    color: #2c54a3;
+    color: #be0000;
 }
 
 .front-bg-innner {
@@ -1115,7 +1115,7 @@ div#navi ul li ul li a:hover {
     margin: 30px 0px;
     padding: 15px 0px;
     font-weight: normal;
-    border-bottom: 6px solid #be7a7a;
+    border-bottom: 6px solid #CF4A4A;
 }
 
 .red {
@@ -1182,7 +1182,7 @@ div#navi ul li ul li a:hover {
 .h3 {
     color: #be0000;
     padding: 10px 0 10px 15px;
-    background-color: #ebcdcd;
+    background-color: #FCDEDE;
     font-size: 20px;
     margin-bottom: 20px;
 }
